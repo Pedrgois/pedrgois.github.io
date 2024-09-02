@@ -69,7 +69,7 @@ main {
   background-color: #ffffff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.conteudo { 
+.conteudo {   /* formata conteudo em um display flex */
   padding-top: 70px;
   align-items:normal;
   justify-content:space-around;
