@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* fonte importada do google */
+* {
+  margin: 0;  /* reset de css */
+  padding: 0;
+  box-sizing: border-box;
+}
+.flex {
+  display: flex;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #ffffff;
+  }
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* o menu fique sobre outros elementos */
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  font-style: italic;
+  color: #11ff00fe;
+  font-weight: 700;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+}
+
+.menu li {
+  margin-left: 20px;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+}
+
+.menu li a:hover {
+  background-color: #11ff00fe;
+  border-radius: 5px;
+}
+
+main {
+  max-width: 1080px;
+  margin: 20px auto;
+  padding: 20px;
+  padding-top: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.content { 
+  padding-top: 70px;
+  align-items:normal;
+  justify-content:space-around;
+  display: flex;
+  height: 800px; /* Ocupa toda a altura da janela */
+}
+
+
+.imagem_ilustracao img {
+  max-width: 200px; /* Tamanho máximo da imagem */
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 15px; /* Bordas arredondadas para a imagem */
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+/* Estilo do formulário */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario {
+  margin-bottom: 15px;
+}
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+/* efeito ao clicar no botao */
+button[type="submit"]:hover {
+  background-color: #32e332;
+  border-radius: 5px;
+}
