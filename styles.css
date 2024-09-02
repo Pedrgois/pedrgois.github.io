@@ -1,17 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+/* fonte importada do google */
 * {
-  margin: 0;
+  margin: 0;  /* reset de css */
   padding: 0;
   box-sizing: border-box;
 }
-
+.flex {
+  display: flex;
+}
 body {
   font-family: 'Poppins', sans-serif;
   line-height: 1.6;
   color: #333;
-  background-color: #f4f4f4;
-}
+  background-color: #ffffff;
+  }
 
 header {
   background-color: #333;
@@ -20,7 +22,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1000; /* Para garantir que o menu fique sobre outros elementos */
+  z-index: 1000; /* o menu fique sobre outros elementos */
 }
 
 nav {
@@ -35,6 +37,7 @@ nav {
 .logo {
   font-style: italic;
   color: #11ff00fe;
+  font-weight: 700;
 }
 
 .menu {
@@ -59,15 +62,26 @@ nav {
 }
 
 main {
-  max-width: 1200px;
+  max-width: 1080px;
   margin: 20px auto;
   padding: 20px;
-  background-color: #fff;
+  padding-top: 20px;
+  background-color: #ffffff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+.content { 
+  padding-top: 70px;
+  align-items:normal;
+  justify-content:space-around;
+  display: flex;
+  height: 800px; /* Ocupa toda a altura da janela */
+}
 
-section {
-  margin-bottom: 20px;
+
+.imagem_ilustracao img {
+  max-width: 200px; /* Tamanho máximo da imagem */
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 15px; /* Bordas arredondadas para a imagem */
 }
 
 footer {
@@ -89,10 +103,6 @@ form {
   margin-bottom: 15px;
 }
 
-label {
-  margin-bottom: 5px;
-  font-weight: bold;
-}
 
 input[type="text"],
 input[type="email"],
@@ -116,7 +126,7 @@ button[type="submit"] {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
+/* efeito ao clicar no botao */
 button[type="submit"]:hover {
   background-color: #32e332;
   border-radius: 5px;
